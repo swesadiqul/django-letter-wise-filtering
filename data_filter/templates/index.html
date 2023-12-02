@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" href=""> -->
+</head>
+
+<body>
+
+    <nav class="nav">
+        <a class="nav-link active" aria-current="page" href="">All</a>
+        <a class="nav-link" href="/?letter=A">A</a>
+        <a class="nav-link" href="/?letter=B">B</a>
+        <a class="nav-link" href="/?letter=C">C</a>
+        <a class="nav-link" href="/?letter=D">D</a>
+        <a class="nav-link" href="/?letter=E">E</a>
+        <a class="nav-link" href="/?letter=F">F</a>
+        <a class="nav-link" href="/?letter=G">G</a>
+        <a class="nav-link" href="/?letter=S">S</a>
+    </nav>
+
+    {% for person in persons %}
+    {{ person.name }} <br>
+    {% endfor %}
+
+</body>
+</html>
